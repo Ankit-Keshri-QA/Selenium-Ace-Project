@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-16T23:33:29 IST" name="Suite" finished-at="2024-10-16T23:33:45 IST" duration-ms="15867">
+    <groups>
+    </groups>
+    <test started-at="2024-10-16T23:33:29 IST" name="Test" finished-at="2024-10-16T23:33:45 IST" duration-ms="15867">
+      <class name="com.scripts.BasicTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.scripts.BasicTest@4ac3c60d]" started-at="2024-10-16T23:33:29 IST" name="setup" finished-at="2024-10-16T23:33:33 IST" duration-ms="3929" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="enterLoginForm()[pri:0, instance:com.scripts.BasicTest@4ac3c60d]" started-at="2024-10-16T23:33:33 IST" name="enterLoginForm" finished-at="2024-10-16T23:33:35 IST" duration-ms="1315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterLoginForm -->
+        <test-method signature="doLogin()[pri:0, instance:com.scripts.BasicTest@4ac3c60d]" started-at="2024-10-16T23:33:35 IST" name="doLogin" finished-at="2024-10-16T23:33:39 IST" depends-on-methods="com.scripts.BasicTest.enterLoginForm" duration-ms="4428" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLogin -->
+        <test-method signature="productsPage()[pri:0, instance:com.scripts.BasicTest@4ac3c60d]" started-at="2024-10-16T23:33:39 IST" name="productsPage" finished-at="2024-10-16T23:33:39 IST" depends-on-methods="com.scripts.BasicTest.doLogin, com.scripts.BasicTest.enterLoginForm" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productsPage -->
+        <test-method signature="goToCart()[pri:0, instance:com.scripts.BasicTest@4ac3c60d]" started-at="2024-10-16T23:33:39 IST" name="goToCart" finished-at="2024-10-16T23:33:42 IST" depends-on-methods="com.scripts.BasicTest.productsPage" duration-ms="2685" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToCart -->
+        <test-method signature="performCartOperation()[pri:0, instance:com.scripts.BasicTest@4ac3c60d]" started-at="2024-10-16T23:33:42 IST" name="performCartOperation" finished-at="2024-10-16T23:33:45 IST" depends-on-methods="com.scripts.BasicTest.goToCart" duration-ms="3241" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- performCartOperation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.scripts.BasicTest@4ac3c60d]" started-at="2024-10-16T23:33:45 IST" name="tearDown" finished-at="2024-10-16T23:33:45 IST" duration-ms="170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.scripts.BasicTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
