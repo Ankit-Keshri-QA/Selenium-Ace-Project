@@ -12,8 +12,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTestNG {
 
 	public static WebDriver driver;
+	public  String registerUrl = "https://anupdamoda.github.io/AceOnlineShoePortal/Registration.html";
 
-	@BeforeTest
+	@BeforeTest(alwaysRun = true)
 	public void setup() {
 		WebDriverManager.edgedriver().setup();
 		driver = new EdgeDriver();
@@ -26,7 +27,7 @@ public class BaseTestNG {
 		System.out.println(title);
 	}
 
-	@AfterTest
+	@AfterTest(alwaysRun = true)
 	public void tearDown() {
 		driver.close();
 	}

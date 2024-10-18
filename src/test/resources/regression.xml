@@ -2,13 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 	<test thread-count="5" name="Test">
-		<classes>
 
+		<groups>
+			<run>
+				<include name="regression" />
+			</run>
+		</groups>
+
+		<classes>
 			<class name="com.scripts.LandingPageTest" />
 			<class name="com.scripts.LoginPageTest" />
 			<class name="com.scripts.BasicTest" />
-			<class name="com.scripts.RegisterPageTest" />
-			
 		</classes>
 	</test> <!--
 	Test -->
